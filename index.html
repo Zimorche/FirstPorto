@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/46ea1d402e.js" crossorigin="anonymous"></script>
+    <title>PORTOFOLIO</title>
+</head>
+<body>
+    <header>
+        <div class="nav-text"><a href="#home"><h1>Z<span class="active-text">M</span></h1></a></div>
+        <ul class="navbar">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Project</a></li>
+            <li><a href="">Experience</a></li>
+        </ul>
+        <button class="btn contact-btn" id="contactBtn">Contact</button>
+    </header>
+
+
+    <section id="home">
+        <div class="home-container">
+            <div class="home-text">
+                <h1>HELLO</h1>
+                <h1>i am <span class="active">Abdul Latif Matondang</span></h1>
+                <h2>I am a Developer</h2>
+                <p>Lorem ipsum hahaha sit amet consectetur, adipisicing elit. Nostrum obcaecati velit, commodi, qui modi optio doloribus veniam autem voluptatum magnam, quibusdam facilis deleniti aliquam natus excepturi reiciendis dolorem delectus dolorum.</p>
+                <div>
+                    <h2 class="social-text">My Socials</h2>
+                </div>
+
+                <div class ="socials-container">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+            </div>
+            <div class="home-image">
+                <img src="./Gambar/Home.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="about">
+        
+
+    </section>
+
+    <div class="modal-container">
+        <div class="modal">
+            <div class="modal-title">
+                <h2 class="modal-contact">Contact</h2>
+                <i class="fa fa-close" style="font-size:30px" id="close-modal"></i>
+            </div>
+            <form action="" class="modal-form">
+                <input class="input-modal" type="text" id="firstName" placeholder="First Name">
+                <input class="input-modal" type="text" id="lastName" placeholder="Last Name" >
+                <input class="input-modal" type="email" id="email" placeholder="Your Email" required>
+                
+                <textarea name="message"  class="contact-text-area" 
+                maxlength="250"  id="contact-message" rows="10"
+                cols="30"></textarea>
+                <input type="submit" value="Submit" class="submit">
+              </form> 
+        </div>
+    </div>
+
+    <script src="/SOLO/scripts/script.js"></script>
+</body>
+</html>

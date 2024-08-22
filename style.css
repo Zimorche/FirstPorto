@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Tebal';
+    src: url(./Font/Karla-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'Tipis';
+    src: url(./Font/Karla-Light.ttf);
+}
+
+p,a,li,button{
+    font-family: 'Tipis';
+    text-decoration: none;
+    list-style-type: none;
+}
+
+h1,h2{
+    font-family: 'Tebal';
+
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    border: 0px;
+    cursor: pointer;
+    
+}
+
+.btn.contact-btn{
+    background-color: cadetblue;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+
+.img img{
+    width: 40px;
+    height: 40px;
+    padding: 6px 6px;
+}
+
+header{
+    display: flex;
+    top: 0;
+    right: 0;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background:transparent;
+    z-index: 1000;
+    height: fit-content;
+}
+
+.navbar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    left:20px;
+}
+
+.navbar li a ,.navbar li{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    transition: all .50s ease;
+}
+
+
+.navbar li:hover,.navbar li a:hover{
+    transform: scale(1.1);
+    color: lightseagreen;
+}
+
+/* SECTION */
+#home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(to left,rgba(0,0,0,0.6),rgba(0,0,0,0.65)), url(./Gambar/Tuscany.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 100px;
+    gap: 1.1rem;
+}
+
+.home-container .home-text h1{
+    color: white;
+    font-size: 36px;
+}
+
+.home-container .home-text h2{
+    color:aquamarine
+}
+
+.home-container .home-text p{
+    color: white;
+}
+
+.active{
+    color: cornflowerblue;
+}
+
+
+.home-image img{
+    height: 300px;
+    width: 300px;
+}
+

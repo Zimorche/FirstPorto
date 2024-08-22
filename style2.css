@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Tebal';
+    src: url(./Font/Karla-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'Tipis';
+    src: url(./Font/Karla-Light.ttf);
+}
+
+p,a,li,button{
+    font-family: 'Tipis';
+    text-decoration: none;
+    list-style-type: none;
+}
+
+h1,h2{
+    font-family: 'Tebal';
+
+}
+
+body{
+    /* background-image:linear-gradient(180deg,#4e69b1,#5c6ca3); */
+    background: linear-gradient(-45deg, #292929,#201a30);
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    border: 0px;
+    cursor: pointer;
+    
+}
+
+.btn.contact-btn{
+    background-color: cadetblue;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+
+.nav-text h1{
+    color: white;
+    padding: 6px 6px;
+}
+
+.nav-text .active-text{
+    color: #2800ff;
+}
+
+header{
+    display: flex;
+    top: 0;
+    right: 0;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background:transparent;
+    z-index: 1000;
+    height: fit-content;
+}
+
+.navbar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    left:20px;
+}
+
+.navbar li a ,.navbar li{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    transition: all .50s ease;
+}
+
+
+.navbar li:hover,.navbar li a:hover{
+    transform: scale(1.1);
+    color: lightseagreen;
+}
+
+/* SECTION */
+#home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 100px;
+    gap: 8rem;
+}
+
+.home-container .home-text h1{
+    color: white;
+    font-size: 36px;
+}
+
+.home-container .home-text h2{
+    color:aquamarine
+}
+
+.home-container .home-text p{
+    color: white;
+}
+
+.active{
+    color: cornflowerblue;
+}
+
+
+.socials-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 50px;
+    gap: 2rem;
+    position: relative;
+}
+
+.socials-container a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+ .socials-container a .fa-brands{
+    font-size: 20px;
+    line-height: 40px;
+    z-index: 10;
+    position: relative;
+    transition: transform color 0.5s;
+}
+
+ .socials-container a .fa-brands:hover{
+    color:#fff;
+
+}
+.socials-container a::after{
+    content:'';
+    width: 100%;
+    height: 100%;
+    top: -50px;
+    left:0;
+    background: linear-gradient(-45deg,#0a10a9,#0099ff);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.socials-container a:hover::after{
+    top:0;
+
+}
+
+.socials-container a:hover{
+    transform: translateY(-5px);
+} 
+
+.home-text{
+    width: 50%;
+    position: relative;
+}
+
+.home-image img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 80px 5px #2800ff;
+}
+
+.social-text{
+    display: flex;
+    position: relative;
+    top: 40px;
+} 
+
+
+.modal-container{
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 10000;
+    transition:all 1s ease;
+    opacity: 0%;
+}
+
+.modal-container:hover{
+
+    opacity:100% ;
+}
+
+
+.modal{
+    display: block;
+    background-color: white;
+    position: relative;
+    width:500px;
+    height:600px;
+    border-radius: 10px;
+    
+}
+
+.modal-title{
+    text-align: center;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-title i{
+    display: flex;
+    position: relative;
+    top:-27px;
+    left: 175px;
+    cursor: pointer;
+
+}
+
+.modal-contact{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+
+.modal-form{
+    display: flex;
+    /* padding: 5px 5px; */
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.input-modal{
+    width: 80% ;
+    height: 40px;
+    border-radius:5px ;
+    background-color: #ededed;
+}
+
+.contact-text-area{
+    width: 80%;
+    background-color: #ededed;
+    border-radius: 10px;
+}
+
+.submit{
+    width: 80%;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+}
